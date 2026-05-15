@@ -144,8 +144,8 @@ function Header({ activeSection, scrollToSection }) {
 
 function Hero({ scrollToSection }) {
   return (
-    <section id="opening" className="relative isolate scroll-mt-24 overflow-hidden">
-      <div className="relative mx-auto flex min-h-[calc(100vh-76px)] max-w-[1920px] flex-col px-8 py-12 2xl:px-12">
+    <section id="opening" className="relative isolate min-h-[calc(100vh-88px)] scroll-mt-24 overflow-hidden">
+      <div className="relative mx-auto flex min-h-[calc(100vh-88px)] max-w-[1920px] flex-col px-9 py-14 2xl:px-12 2xl:py-16">
         <div className="pointer-events-none absolute inset-0 -z-10">
           <img src="./assets/phase-provare.png" alt="" className="absolute inset-0 h-full w-full object-cover opacity-90" />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--alpine-ink)_0%,rgba(4,19,39,0.94)_34%,rgba(4,19,39,0.5)_62%,rgba(4,19,39,0.88)_100%)]" />
@@ -154,17 +154,17 @@ function Hero({ scrollToSection }) {
 
         <div className="max-w-[1180px]">
           <p className="text-3xl font-black uppercase tracking-[0.18em] text-[var(--alpine-cyan)]">{narrativeIntro.eyebrow}</p>
-          <h1 className="mt-5 max-w-[1120px] text-[6.7rem] font-black uppercase leading-[0.88] text-white">
+          <h1 className="mt-5 max-w-[1160px] text-[6.15rem] font-black uppercase leading-[0.9] text-white 2xl:text-[6.7rem]">
             <span className="block">La leggerezza evolve,</span>
             <span className="block">la natura resta.</span>
           </h1>
-          <p className="mt-10 max-w-3xl text-3xl font-black uppercase leading-tight text-[var(--alpine-ice)]">
+          <p className="mt-8 max-w-4xl text-[2rem] font-black uppercase leading-tight text-[var(--alpine-ice)] 2xl:mt-10 2xl:text-4xl">
             Dal primo contatto all’Alpine Escape: ogni fase avvicina Sergio e Laurent alla scelta.
           </p>
-          <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/[0.76] pitch-body">{narrativeIntro.subtitle}</p>
+          <p className="mt-7 max-w-3xl text-[1.35rem] leading-relaxed text-white/[0.76] pitch-body 2xl:text-2xl">{narrativeIntro.subtitle}</p>
         </div>
 
-        <div className="mt-auto grid w-full max-w-[1500px] grid-cols-4 gap-4 pt-12">
+        <div className="mt-auto grid w-full max-w-[1660px] grid-cols-4 gap-4 pt-10">
           {strategyPhases.map((phase) => (
             <a
               key={phase.id}
@@ -173,11 +173,11 @@ function Hero({ scrollToSection }) {
                 event.preventDefault()
                 scrollToSection('phases')
               }}
-              className="group min-h-[170px] border-t border-[var(--alpine-cyan)]/50 bg-[rgba(4,17,39,0.64)] px-6 py-6 backdrop-blur-sm transition hover:bg-[rgba(85,200,240,0.12)]"
+              className="group min-h-[160px] border-t border-[var(--alpine-cyan)]/50 bg-[rgba(4,17,39,0.72)] px-7 py-6 backdrop-blur-sm transition hover:bg-[rgba(85,200,240,0.12)] 2xl:min-h-[180px]"
             >
-              <p className="font-mono text-4xl leading-none text-[var(--alpine-cyan)]">{phase.number}</p>
-              <p className="mt-4 text-3xl font-black uppercase leading-none text-white">{phase.label}</p>
-              <p className="mt-4 text-lg leading-snug text-white/[0.66] pitch-body">{phase.short}</p>
+              <p className="font-mono text-4xl leading-none text-[var(--alpine-cyan)] 2xl:text-5xl">{phase.number}</p>
+              <p className="mt-4 text-3xl font-black uppercase leading-none text-white 2xl:text-4xl">{phase.label}</p>
+              <p className="mt-3 text-lg leading-snug text-white/[0.66] pitch-body 2xl:text-xl">{phase.short}</p>
             </a>
           ))}
         </div>
@@ -188,7 +188,7 @@ function Hero({ scrollToSection }) {
             event.preventDefault()
             scrollToSection('problem')
           }}
-          className="mt-8 inline-flex w-fit items-center gap-2 text-base font-black uppercase text-white/[0.55] transition hover:text-[var(--alpine-cyan)]"
+          className="mt-7 inline-flex w-fit items-center gap-2 text-base font-black uppercase text-white/[0.55] transition hover:text-[var(--alpine-cyan)]"
         >
           Parti dal problema
           <ArrowDown size={16} weight="bold" />
