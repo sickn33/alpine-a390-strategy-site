@@ -8,6 +8,7 @@
   --alpine-violet: #5c37d2;
   --alpine-ice: #dcefff;
   --alpine-muted: #94adc2;
+  --presentation-zoom: 0.8;
   font-family: Oswald, "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   color: #ffffff;
   background: var(--alpine-ink);
@@ -33,6 +34,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+#root {
+  min-height: calc(100vh / var(--presentation-zoom));
+  min-width: calc(100vw / var(--presentation-zoom));
+  transform: scale(var(--presentation-zoom));
+  transform-origin: top left;
 }
 
 button,

@@ -30,6 +30,7 @@
 - Moved the key numbers table into the phases section as a bar before the conclusion.
 - Filled the final closing with a stronger bottom message: selection, relationship, proof.
 - Widened the desktop canvas from 1440px to 1920px for header and main sections so wide presentation screens use space more confidently.
+- Set the presentation viewport to render at an 80% default scale, matching the desired browser zoom level without requiring manual browser zoom.
 - Updated `README.md` with the latest source files and run/build/deploy instructions.
 
 ## Validation
