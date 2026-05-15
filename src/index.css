@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --alpine-ink: #041327;
+  --alpine-midnight: #071f43;
+  --alpine-blue: #0b5f99;
+  --alpine-cyan: #55c8f0;
+  --alpine-violet: #5c37d2;
+  --alpine-ice: #dcefff;
+  --alpine-muted: #94adc2;
+  font-family: Oswald, "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  background: var(--alpine-ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --font-display: Oswald, "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: Oswald, "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
+}
+
+html {
+  scroll-behavior: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  letter-spacing: 0;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Body copy: calmer than Oswald for long paragraphs */
+.pitch-body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
