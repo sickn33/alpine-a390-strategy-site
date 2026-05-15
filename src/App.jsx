@@ -103,9 +103,9 @@ function Header({ activeSection, scrollToSection }) {
             event.preventDefault()
             scrollToSection('opening')
           }}
-          className="flex items-center gap-5"
+          className="flex shrink-0 items-center gap-4"
         >
-          <span className="grid h-16 w-[300px] place-items-center overflow-hidden bg-transparent">
+          <span className="grid h-14 w-[260px] place-items-center overflow-hidden bg-transparent">
             <img src="./assets/lumsa-alpine-lockup.png" alt="LUMSA x Alpine" className="h-full w-full object-contain" />
           </span>
           <span>
@@ -125,7 +125,7 @@ function Header({ activeSection, scrollToSection }) {
                   event.preventDefault()
                   scrollToSection(item.id)
                 }}
-                className={`flex min-w-[132px] items-center justify-center gap-2 rounded px-3 py-2 text-sm font-black uppercase transition ${
+                className={`flex min-w-[112px] items-center justify-center gap-2 rounded px-3 py-2 text-sm font-black uppercase transition ${
                   active
                     ? 'bg-[var(--alpine-cyan)] text-[var(--alpine-ink)]'
                     : 'text-white/[0.52] hover:bg-white/[0.06] hover:text-white'
