@@ -675,13 +675,42 @@ export const strategyPhases = [
 ]
 
 export const closingStory = {
-  title: 'Perché funziona',
+  title: 'La promessa diventa esperienza',
   text:
     'La strategia non chiede al target di credere subito ad Alpine. Costruisce fiducia per gradi: prima lo intercetta, poi lo informa, poi lo invita, infine gli fa provare la promessa.',
   axes: [
-    ['Distinzione', 'A390 diventa alternativa colta ai badge ovvi e ai SUV elettrici più prevedibili.'],
-    ['Credibilità', 'Touchpoint selettivi e contesti premium rendono Alpine visibile senza rumore massivo.'],
-    ['Conversione', 'Private Atelier e Alpine Escape trasformano interesse in relazione e segnali commerciali forti.'],
+    {
+      title: 'Distinzione',
+      idea: 'A390 non entra nella gara dei SUV elettrici: diventa una scelta da intenditori.',
+      where: 'Contenuti di scoperta, posizionamento premium e narrazione Alpine.',
+      effect: 'Performance, design e appartenenza sostituiscono il confronto sui badge.',
+    },
+    {
+      title: 'Credibilità',
+      idea: 'La promessa non viene affidata alla pubblicità massiva.',
+      where: 'Atelier, lounge, contenuti tecnici e contesti controllati.',
+      effect: 'Alpine diventa visibile dove il target è disposto ad ascoltare.',
+    },
+    {
+      title: 'Conversione',
+      idea: 'Il percorso trasforma curiosità qualificata in intenzione commerciale.',
+      where: 'Private Atelier, configurazione, test drive e Alpine Escape.',
+      effect: 'Appuntamento, prova e preordine diventano segnali misurabili.',
+    },
+  ],
+  pipeline: [
+    {
+      title: 'Selezione',
+      text: 'Non parliamo a tutti: filtriamo i profili più coerenti con prezzo, cultura automotive e desiderio di distinzione.',
+    },
+    {
+      title: 'Relazione',
+      text: 'L’Atelier trasforma l’interesse in fiducia: consulenza, configurazione e contatto diretto rendono Alpine più personale.',
+    },
+    {
+      title: 'Prova',
+      text: 'L’Alpine Escape chiude il cerchio: la leggerezza non resta promessa, diventa esperienza fisica e memorabile.',
+    },
   ],
 }
 
